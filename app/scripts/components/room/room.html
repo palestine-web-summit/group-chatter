@@ -1,0 +1,31 @@
+<div layout="column" layout-fill>
+  <md-toolbar md-scroll-fixed class="md-tall-medium">
+    <div class="md-toolbar-tools" >
+      <div class="chat-input-container" layout-fill>
+        <input ng-model="newMessage" placeholder="Send new message (enter to send)" layout-fill/>
+      </div>
+    </div>
+  </md-toolbar>
+
+  <md-content md-scroll-y>
+    <md-card>
+      <md-card-content>
+        <md-list>
+          <md-list-item ng-repeat="activity in activities" layout="row" class="activity">
+            <img ng-src="{{activity.user.avatar}}" class="md-avatar"/>
+            <div flex layout="column">
+              <div layout="row" class="meta">
+                <p>
+                  <span>{{activity.user.name}}</span> -
+                  <span>{{activity.when | date:'short'}}</span>
+                </p>
+              </div>
+              <p>{{activity.message}}</p>
+            </div>
+          </md-list-item>
+        </md-list>
+      </md-card-content>
+    </md-card>
+  </md-content>
+
+</div>

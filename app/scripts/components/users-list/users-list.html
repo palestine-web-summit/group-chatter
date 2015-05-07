@@ -1,0 +1,29 @@
+<div layout="column" layout-fill>
+  <md-toolbar class="md-tall md-hue-2" md-scroll-fixed>
+    <div class="md-toolbar-tools">
+      <h3>Who's Here?</h3>
+      <span flex></span>
+      <md-button>
+        Login
+      </md-button>
+    </div>
+
+    <div class="md-toolbar-tools md-toolbar-bottom">
+      <md-input-container>
+        <md-icon md-svg-src="bower_components/material-design-icons/action/svg/production/ic_search_24px.svg">
+        </md-icon>
+        <input ng-model="search" placeholder="Find people"/>
+      </md-input-container>
+    </div>
+  </md-toolbar>
+
+
+  <md-content md-scroll-y>
+     <md-list>
+      <md-list-item ng-repeat="user in users|filter:search">
+        <img ng-src="{{user.avatar}}" width="50" class="md-avatar">
+        <p>{{user.name}}</p>
+      </md-list-item>
+    </md-list>
+  </md-content>
+ </div>

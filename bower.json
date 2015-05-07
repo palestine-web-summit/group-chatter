@@ -9,7 +9,9 @@
     "angular-material": "master",
     "angular-material-icons": "~0.4.0",
     "angularfire": "~1.1.1",
-    "firebase": "~2.2.4"
+    "firebase": "~2.2.4",
+    "faker": "marak/Faker.js#~2.1.2",
+    "material-design-icons": "~1.0.1"
   },
   "devDependencies": {},
   "appPath": "app",
