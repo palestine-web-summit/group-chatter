@@ -19,3 +19,7 @@
 .chat-input-container input:focus {
   outline: none;
 }
+
+.find-users-field {
+  color: #fff;
+}
