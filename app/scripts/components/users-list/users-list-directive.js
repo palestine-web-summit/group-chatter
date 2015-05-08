@@ -1,10 +1,7 @@
 
 angular.module('groupChatterApp').
-  directive('gcUsersList', ['$rootScope', function($rootScope){
+  directive('gcUsersList', function(){
     return {
-      controller: 'UsersListCtrl',
-      restrict: 'AE',
-      replace: true,
-      templateUrl: 'scripts/components/users-list/users-list.html'
+
     };
-  }]);
+  });

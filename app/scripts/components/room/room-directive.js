@@ -1,10 +1,7 @@
 
 angular.module('groupChatterApp').
-  directive('gcRoom', ['$rootScope', function($rootScope){
+  directive('gcRoom', function(){
     return {
-      controller: 'RoomCtrl',
-      restrict: 'AE',
-      replace: true,
-      templateUrl: 'scripts/components/room/room.html'
+
     };
-  }]);
+  });
