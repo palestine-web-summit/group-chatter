@@ -1,5 +1,5 @@
 angular.module('groupChatterApp').
-  controller('RoomCtrl', ['$scope', function($scope){
+  controller('RoomCtrl', ['$scope', '$mdSidenav', function($scope, $mdSidenav){
 
     var generateActivity = function(num) {
       var data = [];
@@ -18,4 +18,9 @@ angular.module('groupChatterApp').
     };
 
     $scope.activities = generateActivity(150);
+
+
+    $scope.toggleSidenav = function(nav) {
+      $mdSidenav(nav).toggle();
+    };
   }]);

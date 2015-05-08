@@ -1,6 +1,9 @@
 <div layout="column" layout-fill>
   <md-toolbar md-scroll-fixed class="md-tall-medium">
     <div class="md-toolbar-tools" >
+      <md-button class="md-icon-button" hide-gt-md ng-click="toggleSidenav('left')">
+        <ng-md-icon icon="menu" layout layout-align="center center"></ng-md-icon>
+      </md-button>
       <div class="chat-input-container" layout-fill>
         <input ng-model="newMessage" placeholder="Send new message (enter to send)" layout-fill/>
       </div>
