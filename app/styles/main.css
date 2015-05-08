@@ -9,17 +9,27 @@
   margin-top: 0;
 }
 
-.chat-input-container input {
+md-input-container.md-default-theme.chat-input-container .md-input {
   padding: 1em;
   background: transparent;
   color: #fff;
   border: none;
 }
 
-.chat-input-container input:focus {
+md-input-container.md-default-theme.chat-input-container .md-input::-webkit-input-placeholder,
+md-input-container.md-default-theme.find-users-container .md-input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.chat-input-container textarea:focus {
   outline: none;
 }
 
-.find-users-field {
+md-input-container.md-default-theme.chat-input-container .md-input,
+md-input-container.md-default-theme.find-users-container .md-input {
   color: #fff;
+}
+
+md-input-container.md-default-theme.find-users-container ng-md-icon svg {
+  fill: rgba(255, 255, 255, 0.8);
 }
