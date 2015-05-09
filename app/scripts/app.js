@@ -9,4 +9,5 @@ angular.module('groupChatterApp', [
     'ngAnimate',
     'ngAria',
     'ngMdIcons',
-  ]);
+    'firebase'
+  ]).constant('FIREBASE_URL', 'https://group-chatter.firebaseio.com/');
